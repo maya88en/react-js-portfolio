@@ -3,6 +3,12 @@
 .custom-navbar {
     background-color: #343a40;
     padding: 1rem 0;
+    
+}
+
+#navbarNav {
+    display: flex;
+    margin: auto;
 }
 
 .FontAwesomeIcon {
@@ -21,6 +27,7 @@ span {
     margin-left: 20px;
     text-decoration: none;
     transition: color 0.3s;
+    display: block;
 }
 
 .brand-name:hover {
@@ -68,13 +75,13 @@ span {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .mobile-menu-closed {
+    /* .mobile-menu-closed {
         display: none;
     }
 
     .mobile-menu-open {
         display: block;
-    }
+    } */
     .navbar-nav {
         margin-left: 0;
         text-align: center;
