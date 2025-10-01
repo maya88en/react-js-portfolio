@@ -71,18 +71,18 @@ span {
     .navbar-nav {
         margin-left: 0;
         text-align: center;
-        display: block;
+        display: flex;
     }
 
     .navbar-toggler {
         margin-bottom: 10px;
-        display: block;
+        display: flex;
     }
 
     .ml-auto {
         margin-left: 0;
         text-align: center;
         margin-top: 10px;
-        display: block;
+        display: flex;
     }
 }

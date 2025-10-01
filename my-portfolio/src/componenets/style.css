@@ -335,10 +335,10 @@ body {
     font-weight: bold;
 }
 
-.breadcrumb-item span::before {
-    display: none;
+/* .breadcrumb-item span::before {
+    display: none; */
     /* Remove separator for the last breadcrumb */
-}
+/* } */
 
 .project-link {
     color: grey;
