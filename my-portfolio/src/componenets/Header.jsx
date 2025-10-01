@@ -46,10 +46,11 @@ return (
 	> 
 		<span className="navbar-toggler-icon"></span> 
 	</button> 
-	<div className={isMenuOpen ? 'mobile-menu-open' : 'mobile-menu-closed'}>
+	
       {/* Menu items */}
 	<div className="collapse navbar-collapse text-white"
 		id="navbarNav"> 
+		<div className={isMenuOpen ? 'mobile-menu-open' : 'mobile-menu-closed'}>
 		<Nav className="ml-auto "> 
 		<Nav.Link as={Link} to="/"> 
 			<span>About</span> 
