@@ -26,8 +26,7 @@ const Header = () => {
     };
 return ( 
 	<div>
-		<div className={isMenuOpen ? 'mobile-menu-open' : 'mobile-menu-closed'}>
-      {/* Menu items */}
+		
 	<Navbar bg="dark" expand="lg"
 	className="custom-navbar shadow-sm"> 
 	<Navbar.Brand as={Link} to="/"
@@ -47,6 +46,8 @@ return (
 	> 
 		<span className="navbar-toggler-icon"></span> 
 	</button> 
+	<div className={isMenuOpen ? 'mobile-menu-open' : 'mobile-menu-closed'}>
+      {/* Menu items */}
 	<div className="collapse navbar-collapse text-white"
 		id="navbarNav"> 
 		<Nav className="ml-auto "> 
@@ -86,10 +87,10 @@ return (
 	</div> 
 	    
     
-
+	</div>
 	</Navbar> 
 	
-	</div>
+	
 	<button onClick={toggleMenu}>☰</button>
 	</div>
 ); 
