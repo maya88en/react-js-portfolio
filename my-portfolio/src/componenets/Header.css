@@ -68,21 +68,28 @@ span {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+    .mobile-menu-closed {
+        display: none;
+    }
+
+    .mobile-menu-open {
+        display: block;
+    }
     .navbar-nav {
         margin-left: 0;
         text-align: center;
-        display: flex;
+        
     }
 
     .navbar-toggler {
         margin-bottom: 10px;
-        display: flex;
+        
     }
 
     .ml-auto {
         margin-left: 0;
         text-align: center;
         margin-top: 10px;
-        display: flex;
+        
     }
 }

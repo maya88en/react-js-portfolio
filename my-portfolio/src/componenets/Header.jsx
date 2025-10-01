@@ -1,5 +1,5 @@
 //Header.jsx
-import React from 'react'; 
+import {useState} from 'react'; 
 import { Navbar, Nav } from 'react-bootstrap'; 
 import { FontAwesomeIcon } 
 from '@fortawesome/react-fontawesome'; 
@@ -15,8 +15,19 @@ import { Link } from 'react-router-dom';
 import './Header.css'; 
 import './style.css'; 
 
+
+
+
 const Header = () => { 
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+      setIsMenuOpen(!isMenuOpen);
+    };
 return ( 
+	<div>
+		<div className={isMenuOpen ? 'mobile-menu-open' : 'mobile-menu-closed'}>
+      {/* Menu items */}
 	<Navbar bg="dark" expand="lg"
 	className="custom-navbar shadow-sm"> 
 	<Navbar.Brand as={Link} to="/"
@@ -73,7 +84,14 @@ return (
 		</Nav.Link> 
 		</Nav> 
 	</div> 
+	    
+    
+
 	</Navbar> 
+	
+	</div>
+	<button onClick={toggleMenu}>☰</button>
+	</div>
 ); 
 }; 
 
