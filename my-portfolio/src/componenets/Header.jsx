@@ -1,5 +1,5 @@
 //Header.jsx
-import {useState} from 'react'; 
+// import {useState} from 'react'; 
 import { Navbar, Nav } from 'react-bootstrap'; 
 import { FontAwesomeIcon } 
 from '@fortawesome/react-fontawesome'; 
@@ -19,14 +19,13 @@ import './style.css';
 
 
 const Header = () => { 
-	const [isMenuOpen, setIsMenuOpen] = useState(false);
+	// const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const toggleMenu = () => {
-      setIsMenuOpen(!isMenuOpen);
-    };
+    // const toggleMenu = () => {
+    //   setIsMenuOpen(!isMenuOpen);
+    // };
 return ( 
-	<div>
-		
+	
 	<Navbar bg="dark" expand="lg"
 	className="custom-navbar shadow-sm"> 
 	<Navbar.Brand as={Link} to="/"
@@ -35,7 +34,7 @@ return (
 		Maya
 		</span> 
 	</Navbar.Brand> 
-	<button 
+	{/* <button 
 		className="navbar-toggler"
 		type="button"
 		data-toggle="collapse"
@@ -45,12 +44,9 @@ return (
 		aria-label="Toggle navigation"
 	> 
 		<span className="navbar-toggler-icon"></span> 
-	</button> 
-	
-      {/* Menu items */}
-	<div className="collapse navbar-collapse text-white"
+	</button>  */}
+	<div className=" text-white"
 		id="navbarNav"> 
-		<div className={isMenuOpen ? 'mobile-menu-open' : 'mobile-menu-closed'}>
 		<Nav className="ml-auto "> 
 		<Nav.Link as={Link} to="/"> 
 			<span>About</span> 
@@ -87,13 +83,13 @@ return (
 		</Nav> 
 	</div> 
 	    
-    
-	</div>
+    {/* <div className={isMenuOpen ? 'mobile-menu-open' : 'mobile-menu-closed'}> */}
+      {/* Menu items */}
+    {/* </div>
+    <button onClick={toggleMenu}>☰</button> */}
+
 	</Navbar> 
 	
-	
-	<button onClick={toggleMenu}>☰</button>
-	</div>
 ); 
 }; 
 
