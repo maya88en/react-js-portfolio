@@ -298,6 +298,7 @@ body {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+    
     h2 {
         font-size: 2rem;
     }

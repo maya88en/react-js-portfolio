@@ -71,15 +71,18 @@ span {
     .navbar-nav {
         margin-left: 0;
         text-align: center;
+        display: block;
     }
 
     .navbar-toggler {
         margin-bottom: 10px;
+        display: block;
     }
 
     .ml-auto {
         margin-left: 0;
         text-align: center;
         margin-top: 10px;
+        display: block;
     }
 }
