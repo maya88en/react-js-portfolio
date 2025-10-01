@@ -6,19 +6,19 @@ import { faEnvelope, faPhone }
 	from '@fortawesome/free-solid-svg-icons'; 
 import { faLinkedin, faGithub } 
 	from '@fortawesome/free-brands-svg-icons'; 
-// import Breadcrumbs from '../componenets/Breadcrumbs'; 
+import Breadcrumbs from '../componenets/Breadcrumbs'; 
 import './style.css'; 
 
 const Contact = () => { 
-	// const breadcrumbsPaths = 
-	// 	[ 
-	// 		{ title: 'Home', to: '/' }, 
-	// 		{ title: 'Contact', to: '/contact' } 
-	// 	]; 
+	const breadcrumbsPaths = 
+		[ 
+			{ title: 'Home', to: '/' }, 
+			{ title: 'Contact', to: '/contact' } 
+		]; 
 
 	return ( 
 		<section id="contact" className="container"> 
-			{/* <Breadcrumbs paths={breadcrumbsPaths} />  */}
+			<Breadcrumbs paths={breadcrumbsPaths} /> 
 			<h2 className="section-title">Contact</h2> 
 			<p className="section-description"> 
 				Feel free to reach out for
